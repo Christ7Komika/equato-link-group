@@ -1,0 +1,75 @@
+.nav__desktop__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.nav__desktop__container .nav__desktop__logo h1 {
+    font-weight: 700;
+    color: var(--dark);
+}
+.nav__desktop__container .nav__desktop_link {
+    display: flex;
+    column-gap: .5rem;
+}
+
+.nav__desktop__container .nav__desktop_link a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+
+.nav__desktop__container .nav__desktop_link a span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    transition: linear .4s;
+}
+
+
+
+.nav__desktop__container .nav__desktop_link a::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    background: #2c2b2b86 ;
+    width: 100%;
+    height: 40px;
+    border-radius: 100%;
+    transition: linear .4s;   
+}
+
+.nav__desktop__container .nav__desktop_link a:hover::before {
+    content: "";
+    position: absolute;
+    border-radius: 0;
+    bottom: 0;
+}
+
+.nav__desktop__container .nav__desktop_link a.selected {
+    background-color: var(--dark) ;
+}
+
+
+.nav__desktop__container .nav__desktop__media__social {
+    display: flex;
+    column-gap: .25rem;
+}
+
+.nav__desktop__container .nav__desktop__media__social  > * {
+    font-size: 1.5rem !important;
+
+}
