@@ -1,0 +1,93 @@
+.home__valor {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.home__valor .home__valor__container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.home__valor .home__valor__container .home__valor__items::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--opacity-blue);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.home__valor .home__valor__container > h2 {
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+.home__valor .home__valor__container > h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  width: 10px;
+  height: 1.8rem;
+  background: var(--dark);
+}
+.home__valor .home__valor__container .home__valor__items {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: url(../../assets/valor.jpg);
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 5px;
+}
+
+.home__valor .home__valor__container .home__valor__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: auto;
+  height: 250px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home__valor .home__valor__container .home__valor__item {
+  width: 300px;
+  height: 0p15x;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.home__valor .home__valor__container .home__valor__item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.home__valor .home__valor__container .home__valor__item h2 {
+  font-weight: 700;
+}

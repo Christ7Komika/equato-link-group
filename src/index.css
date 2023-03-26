@@ -2,7 +2,8 @@
  --white:#fff;
  --dark:#474847;
  --darker: #202020;
- --opacity-dark: rgb(71, 72,71, 0.62)
+ --opacity-dark: rgba(71, 72,71, 0.62);
+ --opacity-blue: rgba(43, 57, 120, .48);
 }
 
 
