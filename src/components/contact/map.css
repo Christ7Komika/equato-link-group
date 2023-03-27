@@ -1,0 +1,43 @@
+.map {
+  background: var(--darker);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map h2 {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.map h2::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1rem;
+  top: 50%;
+  left: calc(50% - 10rem);
+  background: var(--white);
+  transform: translate(-50%, -50%);
+}
+
+.map h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1rem;
+  top: 50%;
+  right: calc(50% - 13rem);
+  background: var(--white);
+  transform: translate(-50%, -50%);
+}
+
+.map .map__container {
+  width: 100%;
+  height: 400px;
+  background: aliceblue;
+}

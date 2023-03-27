@@ -1,14 +1,15 @@
 :root {
- --white:#fff;
- --dark:#474847;
- --darker: #202020;
- --opacity-dark: rgba(71, 72,71, 0.62);
- --opacity-blue: rgba(43, 57, 120, .48);
+  --white: #fff;
+  --dark: #474847;
+  --darker: #202020;
+  --opacity-dark: rgba(71, 72, 71, 0.62);
+  --opacity: rgba(71, 72, 71, 0.212);
+  --opacity-blue: rgba(43, 57, 120, 0.48);
 }
 
-
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,11 +17,11 @@
 }
 
 p {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 a {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: #fff;
   text-decoration: none;

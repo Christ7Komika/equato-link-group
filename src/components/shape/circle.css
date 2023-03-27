@@ -1,0 +1,22 @@
+.circle {
+  position: absolute;
+  background-color: var(--opacity);
+  z-index: -1;
+}
+
+.circle.right {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+}
+.circle.middle {
+  position: absolute;
+  bottom: 100px;
+  right: 300px;
+  z-index: 1;
+}
+.circle.left {
+  position: absolute;
+  bottom: -250px;
+  left: -250px;
+}
