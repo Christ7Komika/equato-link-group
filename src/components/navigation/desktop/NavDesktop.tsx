@@ -5,6 +5,7 @@ import {
 } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
 import "./nav_desktop.css";
+import { motion } from "framer-motion";
 
 const NavDesktop = () => {
   const location = useLocation();

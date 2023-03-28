@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import NavDesktop from "../navigation/desktop/NavDesktop";
+import { motion } from "framer-motion";
 import "./header.css";
 
 const Header = () => {
@@ -8,14 +9,59 @@ const Header = () => {
       <div className="home__nav__container">
         <NavDesktop />
         <div className="home__header__content">
-          <h2>
+          <motion.h2
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                ease: "easeOut",
+
+                duration: 0.8,
+                delay: 0.4,
+              },
+            }}
+          >
             Bienvenue chez equato link group, votre partenaire de confiance pour
             le développement de votre business.
-          </h2>
-          <p>
+          </motion.h2>
+          <motion.div
+            className="line"
+            initial={{
+              width: 0,
+            }}
+            viewport={{ once: true }}
+            whileInView={{
+              width: "50%",
+              transition: {
+                ease: "easeOut",
+                delay: 0.5,
+                duration: 1,
+              },
+            }}
+          ></motion.div>
+          <motion.p
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                ease: "easeOut",
+
+                duration: 0.8,
+                delay: 0.4,
+              },
+            }}
+          >
             Nous sommes une entreprise spécialisée dans le business
             développement, apporteur d’affaires et gestion des marchés publics.
-          </p>
+          </motion.p>
           <Link to="/contact">
             <span>Nous contacter</span>
           </Link>

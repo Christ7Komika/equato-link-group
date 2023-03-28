@@ -52,11 +52,7 @@
   line-height: 2rem;
 }
 
-.home__header .home__header__content h2::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 0;
+.home__header .home__header__content .line {
   background: var(--white);
   width: 50%;
   height: 10px;
