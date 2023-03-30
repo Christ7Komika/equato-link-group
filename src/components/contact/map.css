@@ -41,3 +41,23 @@
   height: 400px;
   background: aliceblue;
 }
+
+@media (max-width: 500px) {
+  .map h2 {
+    width: 100%;
+    padding: 2rem;
+    background: var(--white);
+    color: var(--darker);
+    margin: 2rem 0;
+  }
+
+  .map h2::before {
+    content: "";
+    display: none;
+  }
+
+  .map h2::after {
+    content: "";
+    display: none;
+  }
+}

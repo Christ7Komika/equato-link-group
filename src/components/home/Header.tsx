@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import NavDesktop from "../navigation/desktop/NavDesktop";
 import { motion, Variants } from "framer-motion";
 import "./header.css";
+import { useEffect, useState } from "react";
+import NavMobile from "../navigation/mobile/NavMobile";
 
 const parent: Variants = {
   hidden: {
@@ -45,10 +47,18 @@ const line: Variants = {
 };
 
 const Header = () => {
+  const [width, setWidth] = useState(innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", (e) => {
+      setWidth((e.target as Window).innerWidth);
+    });
+  });
+
   return (
     <div className="home__header">
       <div className="home__nav__container">
-        <NavDesktop />
+        {width <= 750 ? <NavMobile /> : <NavDesktop />}
         <motion.div
           className="home__header__content"
           variants={parent}

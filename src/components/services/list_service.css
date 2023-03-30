@@ -13,7 +13,6 @@
   width: 100%;
   max-width: 1200px;
   color: var(--white);
-  font-size: 1.8rem;
 }
 
 .list__service > h2::before {
@@ -97,4 +96,58 @@
   height: 400px;
   border-radius: 5px;
   background: palegoldenrod;
+}
+
+@media (max-width: 1200px) {
+  .list__service .list_service_dark,
+  .list__service .list_service_light {
+    padding: 2rem;
+  }
+
+  .list__service .list__service_content {
+    padding: 2rem;
+  }
+}
+@media (max-width: 950px) {
+  .list__service .list__service_content {
+    padding: 0;
+  }
+}
+@media (max-width: 950px) {
+  .list__service .list__service_content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .list__service .list_service_dark,
+  .list__service .list_service_light {
+    padding: 0;
+  }
+  .list__service .list__service__infos {
+    padding: 1rem;
+  }
+
+  .list__service .list__service_content .list__service_img {
+    border-radius: 0;
+  }
+
+  .list__service > h2 {
+    width: 100%;
+    padding: 2rem;
+    background: var(--white);
+    color: var(--darker);
+    margin-top: 2rem;
+  }
+
+  .list__service > h2::before {
+    content: "";
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .list__service .list__service_content h2 {
+    font-size: 1.2rem;
+  }
 }

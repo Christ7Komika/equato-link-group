@@ -179,3 +179,39 @@
   bottom: -40px;
   border-radius: 100%;
 }
+
+@media (max-width: 750px) {
+  .infos__contact .infos__contact__items {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 655px) {
+  .infos__contact .infos__contact__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .infos__contact .infos__contact__item {
+    width: 100%;
+    min-width: 100%;
+    max-width: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .infos__contact .infos__contact__container {
+    padding: 0;
+  }
+
+  .infos__contact .form__contact .form__group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 350px) {
+  .infos__contact {
+    padding: 2rem;
+    padding-inline: 1rem;
+  }
+}

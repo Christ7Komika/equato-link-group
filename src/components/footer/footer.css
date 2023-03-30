@@ -72,4 +72,22 @@
 
 .footer .footer__bottom p {
   color: var(--white);
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .footer .footer__top {
+    flex-wrap: wrap;
+  }
+
+  .footer .footer__top h2,
+  .footer .footer__top a,
+  .footer .footer__top p {
+    text-align: center;
+  }
+
+  .footer .footer__top .footer__contact__social__network {
+    display: flex;
+    justify-content: center;
+  }
 }

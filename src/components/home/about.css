@@ -30,3 +30,9 @@
 .about__us h2 {
   color: var(--dark);
 }
+
+@media (max-width: 650px) {
+  .about__us {
+    padding: 0;
+  }
+}

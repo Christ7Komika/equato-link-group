@@ -33,7 +33,6 @@ const NavDesktop = () => {
           <span>Contact</span>
         </Link>
       </div>
-
       <div className="nav__desktop__media__social">
         <motion.a
           whileHover={{
@@ -41,7 +40,7 @@ const NavDesktop = () => {
           }}
         >
           <Link to="#">
-            <AiFillFacebook />
+            <AiFillFacebook size={24} />
           </Link>
         </motion.a>
         <motion.a
@@ -50,7 +49,7 @@ const NavDesktop = () => {
           }}
         >
           <Link to="#">
-            <AiFillInstagram />
+            <AiFillInstagram size={24} />
           </Link>
         </motion.a>
         <motion.a
@@ -59,7 +58,7 @@ const NavDesktop = () => {
           }}
         >
           <Link to="#">
-            <AiFillLinkedin />
+            <AiFillLinkedin size={24} />
           </Link>
         </motion.a>
       </div>

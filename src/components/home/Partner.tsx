@@ -8,6 +8,7 @@ const Parter = () => {
         <h2>Nos partenaires</h2>
         <div className="home__partner__items">
           <div className="home__partner__item">1</div>
+
           <div className="home__partner__item">1</div>
           <div className="home__partner__item">1</div>
           <div className="home__partner__item">1</div>
