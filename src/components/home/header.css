@@ -63,7 +63,7 @@
   color: var(--white);
 }
 
-.home__header .home__header__content a {
+.home__header .home__header__content > a {
   position: relative;
   display: flex;
   justify-content: center;
@@ -74,7 +74,7 @@
   margin-top: 10px;
   overflow: hidden;
 }
-.home__header .home__header__content a span {
+.home__header .home__header__content > a span {
   position: relative;
   display: flex;
   justify-content: center;
@@ -84,11 +84,11 @@
   transition: linear 0.4s;
 }
 
-.home__header .home__header__content a span:hover {
+.home__header .home__header__content > a span:hover {
   color: var(--darker);
 }
 
-.home__header .home__header__content a::before {
+.home__header .home__header__content > a::before {
   content: "";
   position: absolute;
   bottom: -40px;

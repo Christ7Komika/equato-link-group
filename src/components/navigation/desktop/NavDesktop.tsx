@@ -35,15 +35,33 @@ const NavDesktop = () => {
       </div>
 
       <div className="nav__desktop__media__social">
-        <Link to="#">
-          <AiFillFacebook />
-        </Link>
-        <Link to="#">
-          <AiFillInstagram />
-        </Link>
-        <Link to="#">
-          <AiFillLinkedin />
-        </Link>
+        <motion.a
+          whileHover={{
+            scale: 1.2,
+          }}
+        >
+          <Link to="#">
+            <AiFillFacebook />
+          </Link>
+        </motion.a>
+        <motion.a
+          whileHover={{
+            scale: 1.2,
+          }}
+        >
+          <Link to="#">
+            <AiFillInstagram />
+          </Link>
+        </motion.a>
+        <motion.a
+          whileHover={{
+            scale: 1.2,
+          }}
+        >
+          <Link to="#">
+            <AiFillLinkedin />
+          </Link>
+        </motion.a>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@
   column-gap: 0.5rem;
 }
 
-.nav__desktop__container .nav__desktop_link a {
+.nav__desktop__container .nav__desktop_link > a {
   position: relative;
   display: flex;
   justify-content: center;
@@ -28,7 +28,7 @@
   overflow: hidden;
 }
 
-.nav__desktop__container .nav__desktop_link a span {
+.nav__desktop__container .nav__desktop_link > a span {
   position: relative;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@
   transition: linear 0.4s;
 }
 
-.nav__desktop__container .nav__desktop_link a::before {
+.nav__desktop__container .nav__desktop_link > a::before {
   content: "";
   position: absolute;
   bottom: -40px;
@@ -49,14 +49,14 @@
   transition: linear 0.4s;
 }
 
-.nav__desktop__container .nav__desktop_link a:hover::before {
+.nav__desktop__container .nav__desktop_link > a:hover::before {
   content: "";
   position: absolute;
   border-radius: 0;
   bottom: 0;
 }
 
-.nav__desktop__container .nav__desktop_link a.selected {
+.nav__desktop__container .nav__desktop_link > a.selected {
   background-color: var(--dark);
 }
 
@@ -65,6 +65,6 @@
   column-gap: 0.25rem;
 }
 
-.nav__desktop__container .nav__desktop__media__social > * {
+.nav__desktop__container .nav__desktop__media__social > a > a * {
   font-size: 1.5rem !important;
 }
