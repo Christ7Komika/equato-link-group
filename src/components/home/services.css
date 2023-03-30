@@ -38,16 +38,17 @@
   z-index: 2;
   color: var(--white);
   margin-bottom: 2rem;
+  width: 100%;
 }
 
-.home__services .home__services__container > h2::before {
-  content: "";
+.home__services .home__services__container .line {
   position: absolute;
   bottom: -10px;
   left: 0;
   background: var(--white);
   width: calc(50% - 1rem);
   height: 5px;
+  border-radius: 2px;
 }
 
 .home__services .home__services__container .home__services_items {

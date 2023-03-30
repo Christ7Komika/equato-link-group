@@ -72,7 +72,8 @@ const Header = () => {
           <motion.div className="line" variants={line}></motion.div>
           <motion.p variants={text}>
             Nous sommes une entreprise spécialisée dans le business
-            développement, apporteur d’affaires et gestion des marchés publics.
+            développement, apporteur d'affaires et de gestion des marchés
+            publics.
           </motion.p>
           <motion.a variants={text}>
             <Link to="/contact">

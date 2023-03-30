@@ -45,7 +45,12 @@ const line: Variants = {
   },
 };
 
-const Header = () => {
+type Props = {
+  title: string;
+  content: string;
+};
+
+const Header = ({ title, content }: Props) => {
   const [width, setWidth] = useState(innerWidth);
 
   useEffect(() => {
@@ -63,13 +68,9 @@ const Header = () => {
           initial="hidden"
           animate="visible"
         >
-          <motion.h2 variants={text}>SERVICES</motion.h2>
+          <motion.h2 variants={text}>{title}</motion.h2>
           <motion.div className="line" variants={line}></motion.div>
-          <motion.p variants={text}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ab
-            inventore sapiente maxime unde assumenda! Quos quod ipsum rem ab,
-            aspernatur voluptates sit!
-          </motion.p>
+          <motion.p variants={text}>{content}</motion.p>
         </motion.div>
       </div>
     </div>
