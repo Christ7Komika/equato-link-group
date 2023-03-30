@@ -5,7 +5,6 @@ import {
 } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
 import "./nav_desktop.css";
-import { motion } from "framer-motion";
 
 const NavDesktop = () => {
   const location = useLocation();
@@ -33,7 +32,6 @@ const NavDesktop = () => {
           <span>Contact</span>
         </Link>
       </div>
-
       <div className="nav__desktop__media__social">
         <Link to="#">
           <AiFillFacebook />

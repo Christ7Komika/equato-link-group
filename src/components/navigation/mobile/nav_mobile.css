@@ -1,0 +1,65 @@
+.nav__mobile__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.nav__mobile__container .nav__mobile__logo h1 {
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.nav__mobile__container span {
+  color: var(--dark);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__mobile__container .nav__mobile__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--dark);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.nav__mobile__container .nav__mobile__menu .nav__mobile__icon {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-inline: 2rem;
+}
+
+.nav__mobile__container .nav__mobile__icon span {
+  color: aliceblue;
+}
+
+.nav__mobile__container .nav__mobile__menu .nav__mobile__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.nav__mobile__container .nav__mobile__menu .nav__mobile__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  color: aquamarine;
+}
+
+.nav__mobile__container .nav__mobile__menu .nav__mobile__item > a {
+  text-align: center;
+  font-size: 1.1rem;
+}

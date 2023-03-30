@@ -8,6 +8,7 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .home__header::before {
@@ -17,6 +18,8 @@
   left: 0;
   bottom: 0;
   right: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--opacity-dark);
   backdrop-filter: blur(4px);
 }
@@ -104,4 +107,10 @@
   position: absolute;
   bottom: 0;
   border-radius: 0;
+}
+
+@media (max-width: 450px) {
+  .home__header .home__nav__container {
+    padding: 1rem;
+  }
 }

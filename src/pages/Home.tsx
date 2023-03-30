@@ -15,7 +15,8 @@ const Home = () => {
       <Objectif />
       <Valor />
       <Parter />
-      <Footer />
+      {/* 
+      <Footer /> */}
     </>
   );
 };

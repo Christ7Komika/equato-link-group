@@ -27,6 +27,9 @@
   max-width: 1200px;
   padding: 2rem;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home__services .home__services__container > h2 {
@@ -62,7 +65,7 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   backdrop-filter: blur(10px);
-  background-color: #a7adb025;
+  background-color: #a7adb086;
 }
 
 .home__services .home__services_item_content {
@@ -103,4 +106,76 @@
 .home__services .home__services_item:nth-child(3) h2,
 .home__services .home__services_item:nth-child(2) h2 {
   color: var(--medium-dark);
+}
+
+@media (max-width: 1150px) {
+  .home__services .home__services__container {
+    padding: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .home__services .home__services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__services .home__services__container > h2 {
+    max-width: 800px;
+    width: 100%;
+  }
+  .home__services .home__services__container .home__services_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__services .home__services__container .home__services_item {
+    max-width: 800px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .home__services {
+    padding: 1rem;
+  }
+  .home__services .home__services__container .home__services_item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+  }
+
+  .home__services .home__services_item_icon {
+    height: 200px;
+    padding: 0.5rem;
+  }
+  .home__services .home__services_item_icon > div {
+    height: 200px;
+  }
+  .home__services .home__services_item_content {
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .home__services .home__services_item_content h2,
+  .home__services .home__services_item_content p {
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .home__services .home__services__container {
+    width: fit-content;
+  }
+  .home__services .home__services_item_icon {
+    height: 100px;
+  }
+  .home__services .home__services_item_icon > div {
+    height: 100px;
+  }
+
+  .home__services .home__services__container .home__services_item {
+    height: auto;
+  }
 }
