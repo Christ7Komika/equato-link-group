@@ -107,7 +107,8 @@ const Services = () => {
     {
       title: "Conseil et accompagnement",
       content: `
-      Nous travaillons en étroite collaboration avec les entreprises pour comprendre leurs besoins et leurs objectifs, afin de leur fournir des solutions sur mesure. Nous commençons par une analyse approfondie de leur situation actuelle, puis nous élaborons une stratégie de conseil personnalisée pour les aider à atteindre leurs objectifs. Nous travaillons ensuite avec eux pour mettre en œuvre les solutions proposées et mesurer leur impact.
+      Nous travaillons en étroite collaboration avec les entreprises pour comprendre 
+      leurs besoins et leurs objectifs, afin de leur fournir des solutions sur mesure. 
       `,
       img: Suggest,
     },
