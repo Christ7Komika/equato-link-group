@@ -1,9 +1,47 @@
 import "./list_service.css";
+import { motion, Variants } from "framer-motion";
 
 const ListService = () => {
   return (
     <div className="list__service">
-      <h2>DECOUVREZ NOS DIFFERENTS SERVICES</h2>
+      <h2>
+        <motion.span
+          initial={{
+            y: 100,
+            opacity: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: {
+              ease: "backInOut",
+              duration: 0.8,
+            },
+          }}
+        >
+          DECOUVREZ NOS DIFFERENTS SERVICES
+        </motion.span>
+        <motion.div
+          className="line"
+          initial={{
+            width: "60%",
+          }}
+          viewport={{
+            once: true,
+          }}
+          whileInView={{
+            width: "2rem",
+            transition: {
+              ease: "backInOut",
+              delay: 0.8,
+              duration: 1,
+            },
+          }}
+        ></motion.div>
+      </h2>
       <div className="list__service__container">
         <div className="list_service_dark">
           <div className="list__service_content">

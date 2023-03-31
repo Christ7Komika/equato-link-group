@@ -11,6 +11,7 @@ const parent: Variants = {
   visible: {
     opacity: 1,
     transition: {
+      ease: "backOut",
       when: "beforeChildren",
     },
   },
@@ -24,6 +25,7 @@ const text: Variants = {
     y: 0,
     opacity: 1,
     transition: {
+      ease: "backOut",
       duration: 1.2,
       staggerChildren: 0.4,
     },
@@ -38,7 +40,7 @@ const line: Variants = {
     width: "50%",
     opacity: 1,
     transition: {
-      type: "spring",
+      ease: "backOut",
       duration: 1.2,
       staggerChildren: 0.4,
     },

@@ -14,8 +14,7 @@
   gap: 2rem;
 }
 
-.home__objectif .home__objectif__container::after {
-  content: "";
+.home__objectif .line {
   position: absolute;
   top: 50%;
   left: 0;
@@ -93,6 +92,10 @@
   .home__objectif .home__objectif__container {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .home__objectif .line {
+    display: none;
   }
 
   .home__objectif .home__objectif__img {

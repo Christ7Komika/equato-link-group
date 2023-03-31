@@ -15,8 +15,7 @@
   color: var(--white);
 }
 
-.list__service > h2::before {
-  content: "";
+.list__service > h2 .line {
   position: absolute;
   top: 4.3rem;
   left: 0;
@@ -140,8 +139,7 @@
     margin-top: 2rem;
   }
 
-  .list__service > h2::before {
-    content: "";
+  .list__service > h2 .line {
     display: none;
   }
 }

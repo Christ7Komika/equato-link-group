@@ -82,14 +82,14 @@ const Services = () => {
   const content: Variants = {
     hidden: {
       opacity: 0,
-      y: 200,
+      y: 150,
     },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         ease: "backOut",
-        duration: 0.6,
+        duration: 0.8,
       },
     },
   };
@@ -184,6 +184,9 @@ const Services = () => {
           {data.map((service, id) => (
             <motion.div
               variants={card}
+              viewport={{ once: true }}
+              initial="hidden"
+              whileInView="visible"
               className="home__services_item"
               key={`home__services__item__${id}`}
             >
