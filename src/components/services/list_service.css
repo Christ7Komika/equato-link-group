@@ -15,7 +15,7 @@
   color: var(--white);
 }
 
-.list__service > h2 .line {
+.list__service .line {
   position: absolute;
   top: 4.3rem;
   left: 0;
@@ -76,17 +76,15 @@
   position: relative;
 }
 
-.list__service .list__service_content h2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.4rem;
+.list__service .list__service_content .small__line {
+  position: relative;
+  bottom: 0.6rem;
   width: 100%;
   height: 1px;
   background: var(--white);
 }
 
-.list__service .list_service_light h2::before {
+.list__service .list_service_light .small__line {
   background: var(--darker);
 }
 
@@ -139,7 +137,7 @@
     margin-top: 2rem;
   }
 
-  .list__service > h2 .line {
+  .list__service .line {
     display: none;
   }
 }

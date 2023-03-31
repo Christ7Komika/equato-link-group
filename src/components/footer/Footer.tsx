@@ -38,7 +38,13 @@ const Footer = () => {
     },
   };
   return (
-    <div className="footer">
+    <motion.div
+      className="footer"
+      variants={card}
+      viewport={{ once: true }}
+      initial="hidden"
+      whileInView="visible"
+    >
       <div className="footer__top">
         <motion.div
           className="footer__company"
@@ -124,28 +130,9 @@ const Footer = () => {
         </motion.div>
       </div>
       <div className="footer__bottom">
-        <motion.p
-          initial={{
-            y: 100,
-            opacity: 0,
-          }}
-          viewport={{
-            once: true,
-          }}
-          whileInView={{
-            y: 0,
-            opacity: 1,
-            transition: {
-              ease: "backInOut",
-              delay: 0.8,
-              duration: 0.8,
-            },
-          }}
-        >
-          © Equato Link Group 2023
-        </motion.p>
+        <motion.p variants={content}>© Equato Link Group 2023</motion.p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -107,9 +107,7 @@ const Services = () => {
     {
       title: "Conseil et accompagnement",
       content: `
-      Nous vous aidons à identifier et à saisir les opportunités de
-      croissance sur votre marché, en vous accompagnant dans la
-      définition et la mise en œuvre de votre stratégie commerciale.
+      Nous travaillons en étroite collaboration avec les entreprises pour comprendre leurs besoins et leurs objectifs, afin de leur fournir des solutions sur mesure. Nous commençons par une analyse approfondie de leur situation actuelle, puis nous élaborons une stratégie de conseil personnalisée pour les aider à atteindre leurs objectifs. Nous travaillons ensuite avec eux pour mettre en œuvre les solutions proposées et mesurer leur impact.
       `,
       img: Suggest,
     },

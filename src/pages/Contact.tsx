@@ -6,7 +6,7 @@ import Header from "../components/header/Header";
 const Contact = () => {
   const title = "Contact";
   const content =
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae dolores minus eligendi eius cupiditate nobis.";
+    "Vous cherchez à développer votre entreprise ? Nous pouvons vous aider. Contactez-nous pour discuter de vos besoins en matière de développement d'affaires et de stratégie de croissance.";
 
   return (
     <>
