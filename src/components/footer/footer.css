@@ -53,6 +53,21 @@
   gap: 0.5rem;
 }
 
+.footer .footer__top .footer_link.selected {
+  position: relative;
+}
+.footer .footer__top .footer_link.selected::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  border-top: 8px solid transparent;
+  border-left: 20px solid var(--white);
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid transparent;
+  transform: translateY(-50%);
+}
+
 .footer .footer__bottom {
   position: relative;
   display: flex;

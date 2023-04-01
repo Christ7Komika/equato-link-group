@@ -3,11 +3,12 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./footer.css";
 import { motion, Variants } from "framer-motion";
 
 const Footer = () => {
+  const location = useLocation();
   const card: Variants = {
     hidden: {
       opacity: 0,
@@ -75,17 +76,38 @@ const Footer = () => {
             whileInView="visible"
           >
             <motion.a variants={content}>
-              <Link to="/">
+              <Link
+                to="/"
+                className={
+                  location.pathname === "/"
+                    ? "footer_link selected"
+                    : "footer_link"
+                }
+              >
                 <span>Acceuil</span>
               </Link>
             </motion.a>
             <motion.a variants={content}>
-              <Link to="/services" className="selected">
+              <Link
+                to="/services"
+                className={
+                  location.pathname === "/services"
+                    ? "footer_link selected"
+                    : "footer_link"
+                }
+              >
                 <span>Nos Services</span>
               </Link>
             </motion.a>
             <motion.a variants={content}>
-              <Link to="/contact">
+              <Link
+                to="/contact"
+                className={
+                  location.pathname === "/contact"
+                    ? "footer_link selected"
+                    : "footer_link"
+                }
+              >
                 <span>Nous Contacter</span>
               </Link>
             </motion.a>

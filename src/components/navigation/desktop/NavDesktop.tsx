@@ -24,13 +24,13 @@ const NavDesktop = () => {
           to="/services"
           className={location.pathname === "/services" ? "selected" : ""}
         >
-          <span>Services</span>
+          <span>Nos Services</span>
         </Link>
         <Link
           to="/contact"
           className={location.pathname === "/contact" ? "selected" : ""}
         >
-          <span>Contact</span>
+          <span>Nous Contact</span>
         </Link>
       </div>
       <div className="nav__desktop__media__social">

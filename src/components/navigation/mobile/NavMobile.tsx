@@ -83,7 +83,7 @@ const NavMobile = () => {
                     location.pathname === "/services" ? "selected" : ""
                   }
                 >
-                  Services
+                  Nos Services
                 </Link>
               </motion.div>
               <motion.div className="nav__mobile__item" variants={element}>
@@ -91,7 +91,7 @@ const NavMobile = () => {
                   to="/contact"
                   className={location.pathname === "/contact" ? "selected" : ""}
                 >
-                  Contact
+                  Nous Contact
                 </Link>
               </motion.div>
               <motion.div
