@@ -3,6 +3,7 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
+import { TbPointFilled } from "react-icons/tb";
 import { Link, useLocation } from "react-router-dom";
 import "./footer.css";
 import { motion, Variants } from "framer-motion";
@@ -76,39 +77,25 @@ const Footer = () => {
             whileInView="visible"
           >
             <motion.a variants={content}>
-              <Link
-                to="/"
-                className={
-                  location.pathname === "/"
-                    ? "footer_link selected"
-                    : "footer_link"
-                }
-              >
+              <Link className="footer__link" to="/">
                 <span>Acceuil</span>
+                <span>{location.pathname === "/" && <TbPointFilled />}</span>
               </Link>
             </motion.a>
             <motion.a variants={content}>
-              <Link
-                to="/services"
-                className={
-                  location.pathname === "/services"
-                    ? "footer_link selected"
-                    : "footer_link"
-                }
-              >
+              <Link className="footer__link" to="/services">
                 <span>Nos Services</span>
+                <span>
+                  {location.pathname === "/services" && <TbPointFilled />}
+                </span>
               </Link>
             </motion.a>
             <motion.a variants={content}>
-              <Link
-                to="/contact"
-                className={
-                  location.pathname === "/contact"
-                    ? "footer_link selected"
-                    : "footer_link"
-                }
-              >
+              <Link className="footer__link" to="/contact">
                 <span>Nous Contacter</span>
+                <span>
+                  {location.pathname === "/contact" && <TbPointFilled />}
+                </span>
               </Link>
             </motion.a>
           </motion.div>
