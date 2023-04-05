@@ -1,6 +1,5 @@
 import "./list_service.css";
 import { motion, Variants } from "framer-motion";
-import Conseil from "../../assets/conseil.jpg";
 
 const ListService = () => {
   const card: Variants = {

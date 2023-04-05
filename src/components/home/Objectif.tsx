@@ -1,4 +1,4 @@
-import ObjectifImg from "../../assets/objectif.jpg";
+import ObjectifImg from "../../assets/objectif.jpeg";
 import "./objectif.css";
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";

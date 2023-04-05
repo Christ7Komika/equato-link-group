@@ -58,8 +58,6 @@ const Footer = () => {
         >
           <motion.h2 variants={content}>
             <img src={Logo} alt="Logo Equato link group" />
-            {/* <span>Equato </span>
-            <span>link group</span> */}
           </motion.h2>
           <motion.p variants={content}>
             Equato Link Group vous accompagnons dans vos projets avec

@@ -1,0 +1,77 @@
+.not__found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--dark);
+}
+.not__found .lottie__container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not__found .not__found__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.not__found .not__found__text h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+}
+
+.not__found .not__found__text > a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--white);
+  width: 240px;
+  height: 50px;
+  overflow: hidden;
+}
+.not__found .not__found__text > a span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 50px;
+  transition: linear 0.4s;
+}
+
+.not__found .not__found__text > a span:hover {
+  color: var(--darker);
+}
+
+.not__found .not__found__text > a::before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  background: var(--white);
+  width: 100%;
+  height: 50px;
+  border-radius: 100%;
+  transition: linear 0.4s;
+}
+
+.not__found .not__found__text a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-radius: 0;
+}

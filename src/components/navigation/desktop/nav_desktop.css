@@ -11,8 +11,7 @@
 }
 
 .nav__desktop__container .nav__desktop__logo img {
-  width: 170px;
-  /* transform: scale(3.2); */
+  width: 150px;
 }
 
 .nav__desktop__container .nav__desktop_link {
@@ -49,10 +48,10 @@
   position: absolute;
   bottom: -40px;
   background: #2c2b2b86;
-  width: 200%;
+  width: 130px;
   height: 40px;
-  border-radius: 100%;
-  transition: linear 0.4s;
+  border-radius: 75%;
+  transition: linear 0.5s;
 }
 
 .nav__desktop__container .nav__desktop_link > a:hover::before {
