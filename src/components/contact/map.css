@@ -43,10 +43,11 @@
 @media (max-width: 500px) {
   .map h2 {
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 0;
     background: var(--white);
     color: var(--darker);
     margin: 2rem 0;
+    overflow: hidden;
   }
 
   .map h2::before {

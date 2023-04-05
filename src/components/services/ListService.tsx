@@ -1,5 +1,6 @@
 import "./list_service.css";
 import { motion, Variants } from "framer-motion";
+import Conseil from "../../assets/conseil.jpg";
 
 const ListService = () => {
   const card: Variants = {
@@ -95,7 +96,7 @@ const ListService = () => {
             whileInView="visible"
           >
             <motion.div
-              className="list__service_img"
+              className="list__service_img business"
               variants={content}
             ></motion.div>
             <motion.div
@@ -129,11 +130,11 @@ const ListService = () => {
             whileInView="visible"
           >
             <motion.div
-              className="list__service_img"
+              className="list__service_img conseil"
               variants={content}
             ></motion.div>
             <motion.div
-              className="list__service__infos"
+              className="list__service__infos "
               variants={card}
               viewport={{ once: true }}
               initial="hidden"
@@ -167,7 +168,7 @@ const ListService = () => {
             whileInView="visible"
           >
             <motion.div
-              className="list__service_img"
+              className="list__service_img apporteur"
               variants={content}
             ></motion.div>
             <motion.div
@@ -201,7 +202,7 @@ const ListService = () => {
             whileInView="visible"
           >
             <motion.div
-              className="list__service_img"
+              className="list__service_img market"
               variants={content}
             ></motion.div>
             <motion.div

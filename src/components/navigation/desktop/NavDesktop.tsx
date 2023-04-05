@@ -6,6 +6,7 @@ import {
 import { Link, useLocation } from "react-router-dom";
 import "./nav_desktop.css";
 import { motion } from "framer-motion";
+import Logo from "../../../assets/logo.png";
 
 const NavDesktop = () => {
   const location = useLocation();
@@ -13,7 +14,7 @@ const NavDesktop = () => {
   return (
     <div className="nav__desktop__container">
       <div className="nav__desktop__logo">
-        <h1>LOGO</h1>
+        <img src={Logo} alt="Logo Equato Link Group" />
       </div>
 
       <div className="nav__desktop_link">

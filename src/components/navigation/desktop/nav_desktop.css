@@ -9,6 +9,12 @@
   font-weight: 700;
   color: var(--dark);
 }
+
+.nav__desktop__container .nav__desktop__logo img {
+  width: 170px;
+  /* transform: scale(3.2); */
+}
+
 .nav__desktop__container .nav__desktop_link {
   display: flex;
   column-gap: 0.5rem;

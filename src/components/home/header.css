@@ -5,7 +5,7 @@
   max-width: 100vw;
   min-height: 100vh;
   height: fit-content;
-  background: url(../../assets/header.jpg);
+  background: url(../../assets/pont1.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -19,7 +19,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: var(--opacity-dark);
+  background-color: #161d25c0;
   backdrop-filter: blur(4px);
 }
 

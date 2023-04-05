@@ -7,6 +7,7 @@ import { TbPointFilled } from "react-icons/tb";
 import { Link, useLocation } from "react-router-dom";
 import "./footer.css";
 import { motion, Variants } from "framer-motion";
+import Logo from "../../assets/logo.png";
 
 const Footer = () => {
   const location = useLocation();
@@ -55,7 +56,11 @@ const Footer = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <motion.h2 variants={content}>LOGO</motion.h2>
+          <motion.h2 variants={content}>
+            <img src={Logo} alt="Logo Equato link group" />
+            {/* <span>Equato </span>
+            <span>link group</span> */}
+          </motion.h2>
           <motion.p variants={content}>
             Equato Link Group vous accompagnons dans vos projets avec
             professionnalisme et efficacité

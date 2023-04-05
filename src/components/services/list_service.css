@@ -95,6 +95,27 @@
   background: palegoldenrod;
 }
 
+.list__service .list__service_content .list__service_img.business {
+  background: url(../../assets/business.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.list__service .list__service_content .list__service_img.conseil {
+  background: url(../../assets/conseil.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.list__service .list__service_content .list__service_img.apporteur {
+  background: url(../../assets/apporteur.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.list__service .list__service_content .list__service_img.market {
+  background: url(../../assets/market.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
 @media (max-width: 1200px) {
   .list__service .list_service_dark,
   .list__service .list_service_light {

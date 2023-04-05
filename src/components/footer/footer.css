@@ -21,6 +21,18 @@
   gap: 2rem;
 }
 
+.footer .footer__top .footer__company h2 {
+  text-transform: none;
+}
+
+.footer .footer__top .footer__company img {
+  height: 80px;
+}
+
+.footer .footer__top .footer__company h2 span:first-child {
+  color: #0292dc;
+}
+
 .footer .footer__top > div {
   width: 300px;
   display: flex;

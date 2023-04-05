@@ -9,6 +9,7 @@ import {
 } from "react-icons/ai";
 import { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
+import Logo from "../../../assets/logo.png";
 
 const parent: Variants = {
   hidden: {
@@ -48,7 +49,7 @@ const NavMobile = () => {
   return (
     <div className="nav__mobile__container">
       <div className="nav__mobile__logo">
-        <h1>LOGO</h1>
+        <img src={Logo} alt="Logo Equato link group" />
       </div>
       <span onClick={() => setIsOpen(true)}>
         <FaBars />

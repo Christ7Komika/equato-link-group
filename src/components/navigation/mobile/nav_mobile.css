@@ -5,9 +5,8 @@
   height: 50px;
 }
 
-.nav__mobile__container .nav__mobile__logo h1 {
-  font-weight: 700;
-  color: var(--dark);
+.nav__mobile__container .nav__mobile__logo img {
+  height: 80px;
 }
 
 .nav__mobile__container span {
@@ -77,4 +76,10 @@
 .nav__mobile__container .nav__mobile__social__network {
   display: flex;
   gap: 1rem;
+}
+
+@media (max-width: 390px) {
+  .nav__mobile__container .nav__mobile__logo img {
+    height: 60px;
+  }
 }
