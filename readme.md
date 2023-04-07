@@ -1,1 +1,3 @@
-https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html
+# START THE PROJECT
+
+- npm run dev
