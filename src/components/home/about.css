@@ -1,7 +1,11 @@
 .about__us {
   position: relative;
   padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background: whitesmoke;
 }
@@ -11,6 +15,8 @@
   left: 0;
   height: calc(100% - 4rem);
   background: var(--dark);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -21,7 +27,12 @@
 }
 
 .about__us .about__us__container .about__us__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 0.5rem;
   max-width: 650px;

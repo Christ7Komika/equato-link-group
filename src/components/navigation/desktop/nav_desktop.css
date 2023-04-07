@@ -1,6 +1,12 @@
 .nav__desktop__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 50px;
 }
@@ -15,14 +21,24 @@
 }
 
 .nav__desktop__container .nav__desktop_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 0.5rem;
+  -moz-column-gap: 0.5rem;
   column-gap: 0.5rem;
 }
 
 .nav__desktop__container .nav__desktop_link > a {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 40px;
   width: 130px;
@@ -35,11 +51,19 @@
 
 .nav__desktop__container .nav__desktop_link > a span {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 130px;
   height: 40px;
+  -webkit-transition: linear 0.4s;
+  -o-transition: linear 0.4s;
   transition: linear 0.4s;
 }
 
@@ -51,6 +75,8 @@
   width: 130px;
   height: 40px;
   border-radius: 75%;
+  -webkit-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
   transition: linear 0.5s;
 }
 
@@ -66,14 +92,22 @@
 }
 
 .nav__desktop__container .nav__desktop__media__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 0.25rem;
+  -moz-column-gap: 0.25rem;
   column-gap: 0.25rem;
 }
 
 .nav__desktop__container .nav__desktop__media__social a {
+  -webkit-transition: linear 0.1s;
+  -o-transition: linear 0.1s;
   transition: linear 0.1s;
 }
 
 .nav__desktop__container .nav__desktop__media__social a:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
