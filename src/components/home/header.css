@@ -154,9 +154,3 @@
     padding: 1rem;
   }
 }
-
-@media (orientation: landscape) {
-  .home__header {
-    height: 500px;
-  }
-}
