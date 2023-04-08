@@ -50,29 +50,15 @@ const line: Variants = {
 
 const Header = () => {
   const [width, setWidth] = useState(innerWidth);
-  const [height, setHeight] = useState(innerHeight);
-  const [portrait, setPortrait] = useState(false);
 
   useEffect(() => {
     window.addEventListener("resize", (e) => {
       setWidth((e.target as Window).innerWidth);
-      setWidth((e.target as Window).innerWidth);
     });
   });
 
-  useEffect(() => {
-    if (height > width) {
-      setPortrait(true);
-    } else {
-      setPortrait(false);
-    }
-  }, [width, height]);
-
   return (
-    <div
-      className="home__header"
-      style={portrait ? { height: "100vh" } : { height: 500 }}
-    >
+    <div className="home__header">
       <div className="home__nav__container">
         {width <= 750 ? <NavMobile /> : <NavDesktop />}
         <motion.div

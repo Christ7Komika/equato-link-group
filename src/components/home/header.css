@@ -7,6 +7,9 @@
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+
+  min-height: 500px;
+  max-height: auto;
   height: 100vh;
   background-image: url("../../assets/pont1.jpeg");
   background-position: center center;
