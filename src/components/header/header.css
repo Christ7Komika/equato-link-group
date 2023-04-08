@@ -15,7 +15,7 @@
 }
 
 @supports (-webkit-touch-callout: none) {
-  .imageDiv {
+  .custom__header {
     background: url("../../assets/bakomgo.jpeg") center center no-repeat scroll;
     background-size: auto 500px;
   }

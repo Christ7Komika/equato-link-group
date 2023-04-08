@@ -14,6 +14,13 @@
   background-attachment: fixed;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .home__services {
+    background: url("../../assets/services.jpeg") center center no-repeat scroll;
+    background-size: auto auto;
+  }
+}
+
 .home__services::before {
   content: "";
   position: absolute;

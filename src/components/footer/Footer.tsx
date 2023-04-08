@@ -40,6 +40,20 @@ const Footer = () => {
       },
     },
   };
+  const footer: Variants = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        ease: "backOut",
+        duration: 0.8,
+      },
+    },
+  };
   return (
     <motion.div
       className="footer"
@@ -123,21 +137,21 @@ const Footer = () => {
             initial="hidden"
             whileInView="visible"
           >
-            <motion.a variants={content}>
+            <motion.p variants={footer}>
               <Link to="#">
                 <AiFillFacebook />
               </Link>
-            </motion.a>
-            <motion.a variants={content}>
+            </motion.p>
+            <motion.p variants={footer}>
               <Link to="#">
                 <AiFillInstagram />
               </Link>
-            </motion.a>
-            <motion.a variants={content}>
+            </motion.p>
+            <motion.p variants={footer}>
               <Link to="#">
                 <AiFillLinkedin />
               </Link>
-            </motion.a>
+            </motion.p>
           </motion.div>
         </motion.div>
       </div>

@@ -67,6 +67,13 @@
   border-radius: 5px;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .home__valor .home__valor__container .home__valor__items {
+    background: url("../../assets/valor.jpeg") center center no-repeat scroll;
+    background-size: auto 400px;
+  }
+}
+
 .home__valor .home__valor__container .home__valor__list {
   position: absolute;
   top: 50%;
@@ -178,6 +185,13 @@
 
   .home__valor .home__valor__container .home__valor__items {
     height: 750px;
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    .home__valor .home__valor__container .home__valor__items {
+      background: url("../../assets/valor.jpeg") center center no-repeat scroll;
+      background-size: auto 750px;
+    }
   }
 }
 
