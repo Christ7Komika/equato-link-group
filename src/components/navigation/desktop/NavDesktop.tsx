@@ -34,6 +34,7 @@ const NavDesktop = () => {
           <span>Nous Contact</span>
         </Link>
       </div>
+
       <div className="nav__desktop__media__social">
         <motion.a
           whileHover={{

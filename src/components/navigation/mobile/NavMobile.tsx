@@ -52,7 +52,7 @@ const NavMobile = () => {
         <img src={Logo} alt="Logo Equato link group" />
       </div>
       <span onClick={() => setIsOpen(true)}>
-        <FaBars />
+        <FaBars color="#fff" />
       </span>
       <AnimatePresence>
         {isOpen && (

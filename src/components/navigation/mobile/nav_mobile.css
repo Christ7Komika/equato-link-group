@@ -69,7 +69,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 1rem;
   width: 100%;
 }
 
@@ -113,5 +112,16 @@
 @media screen and (max-width: 350px) {
   .nav__mobile__container .nav__mobile__logo img {
     width: 150px;
+  }
+}
+
+@media (orientation: landscape) {
+  .nav__mobile__item > a {
+    font-size: 0.8rem;
+    padding: 0.8rem !important;
+  }
+
+  .nav__mobile__social__network {
+    margin-top: 1rem;
   }
 }
