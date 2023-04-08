@@ -111,3 +111,18 @@
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
+
+@media (max-width: 950px) {
+  .nav__desktop__container .nav__desktop__logo img {
+    width: 230px;
+  }
+}
+@media (max-width: 860px) {
+  .nav__desktop__container .nav__desktop__logo img {
+    width: 190px;
+  }
+
+  .nav__desktop__container .nav__desktop_link > a span {
+    font-size: 0.8rem;
+  }
+}
