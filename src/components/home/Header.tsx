@@ -50,12 +50,16 @@ const line: Variants = {
 
 const Header = () => {
   const [width, setWidth] = useState(innerWidth);
+  const [text, setText] = useState();
+  const lang = localStorage.getItem("lang");
 
   useEffect(() => {
     window.addEventListener("resize", (e) => {
       setWidth((e.target as Window).innerWidth);
     });
   });
+
+  useEffect(() => {}, []);
 
   return (
     <div className="home__header">

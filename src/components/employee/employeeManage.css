@@ -1,0 +1,304 @@
+.list__employee {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list__employee > h2 {
+  padding: 4rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  color: var(--darker);
+}
+
+.list__employee .line {
+  position: absolute;
+  top: 4.3rem;
+  left: 0;
+  width: 2rem;
+  height: 1.5rem;
+  background: var(--darker);
+}
+
+.list__employee .list__employee__container {
+  width: 100%;
+}
+
+.list__employee .list_employee_light {
+  padding: 4rem;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--white);
+}
+
+.list__employee .list__employee_content {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 4rem;
+  gap: 2rem;
+}
+
+.list__employee .list__employee_content:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  width: 60%;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: #24262948;
+}
+
+.list__employee .list__employee_content.reverse .list__employee_img {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+.list__employee .list__employee_content.reverse .list__employee_infos {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.list__employee .list__employee_content h2 {
+  color: var(--darker);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.list__employee .list__employee_content .small__line {
+  position: relative;
+  bottom: 0.6rem;
+  width: 100%;
+  height: 1px;
+  background: var(--white);
+}
+
+.list__employee .list_employee_light .small__line {
+  background: var(--darker);
+}
+
+.list__employee .list__employee_content .list__employee_img {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.list__employee .list__employee_content #unique {
+  border-radius: 0;
+  padding: 1rem;
+}
+
+.list__employee .list__employee_content #unique > div {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.4) 0px 4px 6px -2px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.list__employee .list__employee_content .list__employee_img .first__img {
+  width: 400px;
+  height: 300px;
+  background: url(../../assets/teaam1.jpg);
+}
+.list__employee .list__employee_content .list__employee_img .second__img {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  background: url(../../assets/team2.jpg);
+  bottom: 0;
+  right: 0;
+}
+
+.list__employee .list__employee_content .list__employee_img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #24262934;
+}
+
+.list__employee .list__employee_content #unique::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.list__employee .list__employee_content .list__employee_img.market {
+  background: url("../../assets/market.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.employee__faq__container {
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--darker);
+}
+
+.employee__faq__content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 4rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.employee__faq__content .faq__img {
+  width: 100%;
+  height: 100%;
+}
+
+.employee__faq__content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-fit: center center;
+}
+
+.employee__faq__content .faq__element {
+  padding: 0;
+}
+
+.employee__faq__content .faq__element h3 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.employee__faq__content .faq__element span {
+  font-size: 0.9rem;
+}
+
+.employee__faq__content .faq__box {
+  background: var(--white);
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.employee__faq__content .faq__box.response {
+  height: 180px;
+  background: #0f579b46;
+}
+
+.employee__faq__content .faq__box.response span {
+  color: var(--white);
+}
+.employee__faq__content .faq__box.active {
+  background: #0f579b46;
+}
+
+.employee__faq__content .faq__box.active span {
+  color: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .employee__faq__content {
+    padding: 2rem;
+  }
+
+  .list__employee .list_employee_light {
+    padding: 2rem;
+  }
+
+  .list__employee .list__employee_content {
+    padding: 2rem;
+  }
+
+  .employee__faq__container {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .employee__faq__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .employee__faq__content .faq__element {
+    padding: 0;
+  }
+  .list__employee .list__employee_content {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .list__employee .list_employee_light {
+    padding: 0;
+  }
+  .list__employee .list__employee__infos {
+    padding: 1rem;
+  }
+
+  .list__employee .list__employee_content .list__employee_img {
+    border-radius: 0;
+  }
+
+  .list__employee > h2 {
+    width: 100%;
+    padding: 2rem;
+    background: var(--white);
+    color: var(--darker);
+    margin-top: 2rem;
+  }
+
+  .list__employee .line {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .list__employee .list__employee_content h2 {
+    font-size: 1.2rem;
+  }
+}

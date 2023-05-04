@@ -1,6 +1,13 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 
+const Employes = React.lazy(async () => {
+  const [moduleExports] = await Promise.all([
+    import("./pages/Employes"),
+    new Promise((resolve) => setTimeout(resolve, 500)),
+  ]);
+  return moduleExports;
+});
 const Contact = React.lazy(async () => {
   const [moduleExports] = await Promise.all([
     import("./pages/Contact"),
@@ -38,6 +45,10 @@ export const routes = createBrowserRouter([
   {
     path: "/services",
     element: <Services />,
+  },
+  {
+    path: "/employee",
+    element: <Employes />,
   },
   {
     path: "/contact",

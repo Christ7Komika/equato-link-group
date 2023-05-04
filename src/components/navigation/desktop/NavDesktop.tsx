@@ -7,6 +7,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./nav_desktop.css";
 import { motion } from "framer-motion";
 import Logo from "../../../assets/logo.png";
+import Lang from "../../lang/Lang";
 
 const NavDesktop = () => {
   const location = useLocation();
@@ -26,6 +27,12 @@ const NavDesktop = () => {
           className={location.pathname === "/services" ? "selected" : ""}
         >
           <span>Nos Services</span>
+        </Link>
+        <Link
+          to="/employee"
+          className={location.pathname === "/employee" ? "selected" : ""}
+        >
+          <span>Personnel</span>
         </Link>
         <Link
           to="/contact"
@@ -62,6 +69,9 @@ const NavDesktop = () => {
           <Link to="#">
             <AiFillLinkedin size={24} />
           </Link>
+        </motion.a>
+        <motion.a>
+          <Lang />
         </motion.a>
       </div>
     </div>

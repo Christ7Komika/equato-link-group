@@ -10,6 +10,7 @@ import {
 import { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import Logo from "../../../assets/logo.png";
+import Lang from "../../lang/Lang";
 
 const parent: Variants = {
   hidden: {
@@ -89,6 +90,16 @@ const NavMobile = () => {
               </motion.div>
               <motion.div className="nav__mobile__item" variants={element}>
                 <Link
+                  to="/employee"
+                  className={
+                    location.pathname === "/employee" ? "selected" : ""
+                  }
+                >
+                  Personnel
+                </Link>
+              </motion.div>
+              <motion.div className="nav__mobile__item" variants={element}>
+                <Link
                   to="/contact"
                   className={location.pathname === "/contact" ? "selected" : ""}
                 >
@@ -108,6 +119,9 @@ const NavMobile = () => {
                 <Link to="#">
                   <AiFillLinkedin size={24} />
                 </Link>
+              </motion.div>
+              <motion.div variants={element} className="language">
+                <Lang />
               </motion.div>
             </motion.div>
           </motion.div>

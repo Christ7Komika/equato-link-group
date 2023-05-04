@@ -60,10 +60,11 @@ const Header = ({ title, content }: Props) => {
       setWidth((e.target as Window).innerWidth);
     });
   });
+
   return (
     <div className="custom__header">
       <div className="custom__header_container">
-        {width <= 750 ? <NavMobile /> : <NavDesktop />}
+        {width <= 1050 ? <NavMobile /> : <NavDesktop />}
         <motion.div
           className="custom__header__content"
           variants={parent}

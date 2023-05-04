@@ -215,7 +215,7 @@ const InfosContact = () => {
             variants={child}
           ></motion.textarea>
           <motion.button variants={child}>
-            <motion.span variants={child}>
+            <motion.span variants={child} style={{cursor: "pointer"}}>
               Envoyer
               <FaPaperPlane />
             </motion.span>
