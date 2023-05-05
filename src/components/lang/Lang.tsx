@@ -4,6 +4,7 @@ import England from "../../assets/Flag_of_the_United_Kingdom.png";
 import Italy from "../../assets/ItaliaFlag.png";
 import "./lang.css";
 import { motion } from "framer-motion";
+import i18n from "../../db/i18n";
 
 const Lang = () => {
   const [open, setOpen] = useState(false);
@@ -60,6 +61,7 @@ const Lang = () => {
                 }}
                 onClick={() => {
                   setSelectedLang({ ...lang });
+                  i18n.changeLanguage(lang.name);
                 }}
               >
                 <img src={lang.flag} alt={lang.name} />

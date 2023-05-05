@@ -4,7 +4,7 @@ import { motion, Variants } from "framer-motion";
 import "./header.css";
 import { useEffect, useState } from "react";
 import NavMobile from "../navigation/mobile/NavMobile";
-
+import { useTranslation } from "react-i18next";
 const parent: Variants = {
   hidden: {
     opacity: 0,
@@ -51,15 +51,13 @@ const line: Variants = {
 const Header = () => {
   const [width, setWidth] = useState(innerWidth);
   const [text, setText] = useState();
-  const lang = localStorage.getItem("lang");
+  const { t } = useTranslation();
 
   useEffect(() => {
     window.addEventListener("resize", (e) => {
       setWidth((e.target as Window).innerWidth);
     });
   });
-
-  useEffect(() => {}, []);
 
   return (
     <div className="home__header">
@@ -71,19 +69,15 @@ const Header = () => {
           initial="hidden"
           animate="visible"
         >
-          <motion.h2 variants={text}>
-            Bienvenue chez equato link group, votre partenaire de confiance pour
-            le développement de votre business.
-          </motion.h2>
+          <motion.h2 variants={text}>{t("home_header_title")}</motion.h2>
           <motion.div className="line" variants={line}></motion.div>
-          <motion.p variants={text}>
-            Nous sommes une entreprise spécialisée dans le business
-            développement, apporteur d'affaires et de gestion des marchés
-            publics.
-          </motion.p>
+          <motion.p variants={text}>{t("home_header_content")}</motion.p>
           <motion.a variants={text}>
             <Link to="/contact">
-              <motion.span variants={text}>Nous contacter</motion.span>
+              <motion.span variants={text}>
+                {" "}
+                {t("home_header_button")}
+              </motion.span>
             </Link>
           </motion.a>
         </motion.div>

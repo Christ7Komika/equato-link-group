@@ -47,6 +47,7 @@
   border: 1px solid transparent;
   text-transform: uppercase;
   overflow: hidden;
+  font-size: 0.8rem;
 }
 
 .nav__desktop__container .nav__desktop_link > a span {
