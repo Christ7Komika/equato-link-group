@@ -74,7 +74,7 @@ const Footer = () => {
             <img src={Logo} alt="Logo Equato link group" />
           </motion.h2>
           <motion.p variants={content}>
-            Equato Link Group vous accompagnons dans vos projets avec
+            Equato Link Group vous accompagne dans vos projets avec
             professionnalisme et efficacité
           </motion.p>
         </motion.div>

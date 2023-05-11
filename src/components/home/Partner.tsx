@@ -1,5 +1,6 @@
 import "./partner.css";
 import { Variants, motion } from "framer-motion";
+import ACPCE from "../../assets/partner/logo44.png";
 
 const Parter = () => {
   const card: Variants = {
@@ -64,10 +65,10 @@ const Parter = () => {
           whileInView="visible"
         >
           <motion.div className="home__partner__item" variants={content}>
-            1
+            {/* <img src={ACPCE} alt="Logo ACPCE" /> */}
           </motion.div>
           <motion.div className="home__partner__item" variants={content}>
-            1
+            <img src={ACPCE} alt="Logo ACPCE" />
           </motion.div>
           <motion.div className="home__partner__item" variants={content}>
             1

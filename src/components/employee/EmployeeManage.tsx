@@ -1,5 +1,5 @@
 import "./employeeManage.css";
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import FAQ from "../../assets/faq.svg";
 import { useState } from "react";
 const EmployeeManage = () => {
@@ -84,7 +84,7 @@ const EmployeeManage = () => {
           },
         }}
       >
-        <span>GESTION DU PERSONNEL ET RECRUTEEMENT</span>
+        <span>GESTION DU PERSONNEL ET RECRUTEMENT</span>
       </motion.h2>
       <div className="list__employee__container">
         <div className="list_employee_light">
