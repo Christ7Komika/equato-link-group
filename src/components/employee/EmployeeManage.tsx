@@ -2,6 +2,10 @@ import "./employeeManage.css";
 import { motion, Variants } from "framer-motion";
 import FAQ from "../../assets/faq.svg";
 import { useState } from "react";
+import PLM from "../../assets/employee/placement.jpg";
+import SV from "../../assets/employee/suivi.jpg";
+import EVT from "../../assets/employee/evaluation.jpg";
+
 const EmployeeManage = () => {
   const [currentId, setCurrentId] = useState(1);
   const card: Variants = {
@@ -84,7 +88,7 @@ const EmployeeManage = () => {
           },
         }}
       >
-        <span>GESTION DU PERSONNEL ET RECRUTEMENT</span>
+        <span>NOS SERVICES DE PLACEMENT DU PERSONNEL</span>
       </motion.h2>
       <div className="list__employee__container">
         <div className="list_employee_light">
@@ -116,17 +120,15 @@ const EmployeeManage = () => {
               initial="hidden"
               whileInView="visible"
             >
-              <motion.h2 variants={content}>NOTRE PERSONNEL</motion.h2>
+              <motion.h2 variants={content}>Recrutement</motion.h2>
               <motion.p variants={content}>
-                Equato Link Group considère son personnel comme sa plus grande
-                ressource et s'efforce de créer un environnement de travail
-                positif et inclusif, où les employés peuvent se développer
-                professionnellement et se sentir en sécurité. Ils offrent des
-                programmes de formation et des avantages sociaux compétitifs
-                pour garantir le bien-être des employés. Equato Link Group est
-                également engagé à offrir un environnement de travail sûr et
-                sain et à encourager une communication ouverte et transparente
-                avec ses employés.
+                Nous cherchons, sélectionnons et présentons des candidats
+                potentiels aux employeurs, en tenant compte de leurs
+                compétences, de leur expérience et de leur adéquation au poste.
+                <br />
+                Nous comptons sur notre réseau de contacts professionnels et
+                notre plateforme de recrutement en ligne pour trouver les
+                candidats plus qualifiés en fonction des besoins de nos clients.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -149,21 +151,15 @@ const EmployeeManage = () => {
               initial="hidden"
               whileInView="visible"
             >
-              <motion.h2 variants={content}>RECRUTEMENT</motion.h2>
+              <motion.h2 variants={content}>SÉLECTION</motion.h2>
               <motion.p variants={content}>
-                Equato Link Group recherche constamment des candidats talentueux
-                pour rejoindre son équipe dynamique et diversifiée. L'entreprise
-                offre des opportunités de carrière passionnantes dans différents
-                domaines et valorise la diversité et l'inclusion. Elle recherche
-                des candidats ayant une solide expérience professionnelle et des
-                compétences techniques, mais également des compétences
-                interpersonnelles et une personnalité alignée avec ses valeurs
-                d'intégrité, de respect, de collaboration et d'excellence. Les
-                candidatures de personnes de toutes les origines et de tous les
-                horizons sont encouragées, et les candidats passionnés, prêts à
-                relever des défis et à travailler en équipe sont invités à
-                postuler en ligne sur la page de recrutement d'Equato Link
-                Group.
+                Nous employons un processus qui vise à choisir les candidats les
+                plus aptes à occuper un poste au sein de l'entreprise du client
+                ou d'une organisation. Nous procédons à des entrevues
+                individuelles et à des évaluations approfondies pour faire en
+                sorte que chaque candidat soit qualifié pour le poste en
+                question. Nous nous efforçons de garantir que chaque candidat
+                est parfaitement adapté à la culture de l'entreprise du client.
               </motion.p>
             </motion.div>
           </motion.div>
@@ -177,10 +173,16 @@ const EmployeeManage = () => {
         >
           <motion.div className="employee__faq__content" variants={card}>
             <motion.div className="faq__img" variants={content}>
-              <motion.img src={FAQ} alt="FAQ svg" variants={content} />
+              <motion.img
+                src={data[currentId - 1].img}
+                alt="FAQ svg"
+                variants={content}
+              />
             </motion.div>
             <motion.div className="faq__element" variants={card}>
-              <motion.h3 variants={content}>FAQ</motion.h3>
+              <motion.h3 variants={content}>
+                NOTRE GESTION DE RESSOURCE HUMAINE
+              </motion.h3>
               {data
                 .filter((response) => response.id === currentId)
                 .map((response) => (
@@ -205,46 +207,21 @@ const EmployeeManage = () => {
                 variants={content}
                 onClick={() => setCurrentId(1)}
               >
-                <span>
-                  Quels sont les services offerts par Equato Link Group ?
-                </span>
+                <span>Évaluation</span>
               </motion.div>
               <motion.div
                 className={currentId === 2 ? "faq__box active" : "faq__box"}
                 variants={content}
                 onClick={() => setCurrentId(2)}
               >
-                <span>Comment puis-je contacter Equato Link Group ?</span>
+                <span>Placement</span>
               </motion.div>
               <motion.div
                 className={currentId === 3 ? "faq__box active" : "faq__box"}
                 variants={content}
                 onClick={() => setCurrentId(3)}
               >
-                <span>
-                  Quelles sont les qualifications requises pour travailler chez
-                  Equato Link Group ?
-                </span>
-              </motion.div>
-              <motion.div
-                className={currentId === 4 ? "faq__box active" : "faq__box"}
-                variants={content}
-                onClick={() => setCurrentId(4)}
-              >
-                <span>
-                  Combien de temps faut-il pour obtenir un contrat public avec
-                  l'aide d'Equato Link Group ?
-                </span>
-              </motion.div>
-              <motion.div
-                className={currentId === 5 ? "faq__box active" : "faq__box"}
-                variants={content}
-                onClick={() => setCurrentId(5)}
-              >
-                <span>
-                  Comment Equato Link Group garantit-il la qualité de ses
-                  services ?
-                </span>
+                <span>Suivi</span>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -257,28 +234,23 @@ const EmployeeManage = () => {
 const data = [
   {
     id: 1,
-    content:
-      "Equato Link Group est une entreprise spécialisée dans le business développement, l'apporteur d'affaires et la gestion des marchés publics. Nous offrons une gamme complète de services pour aider les entreprises à identifier des opportunités de croissance, à obtenir des contrats publics et à gérer efficacement les projets.",
+    content: `À l'aide d'outils d'évaluation de pointe, nous mesurons les compétences techniques et comportementales de chaque candidat.Une évaluation psychométrique peut être fournie pour déterminer la personnalité, les valeurs et les motivations des candidats.`,
+    img: EVT,
   },
   {
     id: 2,
-    content:
-      "Vous pouvez nous contacter en utilisant le formulaire de contact sur notre site Web, en envoyant un e-mail à notre équipe d'assistance à la clientèle ou en nous appelant directement. Toutes nos coordonnées sont disponibles sur notre page de contact.",
+    content: `Nous travaillons en étroite collaboration avec nos clients afin de leur offrir des candidats qui répondent à leurs besoins en matière de compétences, d'expérience et de culture organisationnelle.
+    Nous nous engageons à garantir que chaque candidat est placé dans un poste qui leur convient parfaitement`,
+    img: PLM,
   },
   {
     id: 3,
-    content:
-      "Nous recherchons des candidats ayant une solide expérience professionnelle et des compétences techniques dans divers domaines, tels que le business développement, la gestion des marchés publics et la gestion de projet. Nous attachons également une grande importance aux compétences interpersonnelles et à la personnalité. Nous valorisons la diversité et l'inclusion et encourageons les candidatures de personnes de toutes les origines et de tous les horizons.",
-  },
-  {
-    id: 4,
-    content:
-      "Le temps nécessaire pour obtenir un contrat public dépend de nombreux facteurs, tels que le type de contrat, le secteur d'activité et les réglementations en vigueur. Chez Equato Link Group, nous travaillons en étroite collaboration avec nos clients pour comprendre leurs besoins et les aider à obtenir des contrats publics dans les délais les plus courts possibles.",
-  },
-  {
-    id: 5,
-    content:
-      "Nous sommes engagés à fournir des services de haute qualité à nos clients en étant honnêtes, transparents et professionnels. Nous employons des experts qualifiés dans divers domaines pour fournir des services de pointe à nos clients. De plus, nous suivons des normes élevées en matière de gestion de projet pour garantir la qualité et la satisfaction du client.",
+    content: `
+    Nous restons en contact avec nos clients et les candidats tout au long de la durée du contrat pour nous assurer que tout se passe bien.
+    Nous sommes disponibles pour aider à résoudre tout problème qui pourrait survenir pendant le placement.
+    `,
+
+    img: SV,
   },
 ];
 
