@@ -173,11 +173,25 @@ const EmployeeManage = () => {
         >
           <motion.div className="employee__faq__content" variants={card}>
             <motion.div className="faq__img" variants={content}>
-              <motion.img
-                src={data[currentId - 1].img}
-                alt="FAQ svg"
-                variants={content}
-              />
+              {currentId === 1 ? (
+                <motion.img
+                  src={data[0].img}
+                  alt="Evaluation Image"
+                  variants={content}
+                />
+              ) : currentId === 2 ? (
+                <motion.img
+                  src={data[1].img}
+                  alt="Placement Image"
+                  variants={content}
+                />
+              ) : (
+                <motion.img
+                  src={data[2].img}
+                  alt="Suivi Image"
+                  variants={content}
+                />
+              )}
             </motion.div>
             <motion.div className="faq__element" variants={card}>
               <motion.h3 variants={content}>

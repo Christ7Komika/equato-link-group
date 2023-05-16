@@ -80,7 +80,6 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
@@ -90,11 +89,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: ease-in-out 0.4s;
-}
-
-.home__partner .home__partner__item:hover {
-  transform: translateY(-15px) scale(1.1) !important;
 }
 
 .home__partner .home__partner__items img {

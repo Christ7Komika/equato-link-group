@@ -20,6 +20,7 @@ const Parter = () => {
   };
   const content: Variants = {
     hidden: {
+      scale: 1,
       opacity: 0,
       y: 150,
     },
@@ -64,17 +65,45 @@ const Parter = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <motion.div className="home__partner__item" variants={content}>
-            {/* <img src={ACPCE} alt="Logo ACPCE" /> */}
+          <motion.div
+            className="home__partner__item"
+            whileHover={{
+              scale: 1.1,
+              translateY: -30,
+            }}
+            variants={content}
+          >
+            {/* 1 */}
           </motion.div>
-          <motion.div className="home__partner__item" variants={content}>
-            <img src={ACPCE} alt="Logo ACPCE" />
+          <motion.div
+            className="home__partner__item"
+            whileHover={{
+              scale: 1.1,
+              translateY: -30,
+            }}
+            variants={content}
+          >
+            <motion.img src={ACPCE} alt="Logo ACPCE" />
           </motion.div>
-          <motion.div className="home__partner__item" variants={content}>
-            1
+          <motion.div
+            className="home__partner__item"
+            whileHover={{
+              scale: 1.1,
+              translateY: -30,
+            }}
+            variants={content}
+          >
+            {/* 1 */}
           </motion.div>
-          <motion.div className="home__partner__item" variants={content}>
-            1
+          <motion.div
+            className="home__partner__item"
+            whileHover={{
+              scale: 1.1,
+              translateY: -30,
+            }}
+            variants={content}
+          >
+            {/* 1 */}
           </motion.div>
         </motion.div>
       </div>
